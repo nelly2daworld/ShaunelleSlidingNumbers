@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="Sliding Numbers"
+        android:typeface="serif"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gridView"
+        />
+/<!-- num of puxels is 1000 * 300 -->
+    <!--
+    <ImageView
+        android:src="@drawable/numbers_sprite_100"
+        android:background="@drawable/numbers_sprite_100"
+        android:id="@+id/sprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:onClick="clickEvent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mainText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <GridLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:tools="@+id/GridLayout1"
+        android:columnCoun®t="3"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-android:context=".GridXMLActivity"
+
+        </GridLayout> -->
+
+    <!-- Create the 3 X 3 Grid w/100 * 100 for each number-->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainText"
+    />
+
+    <!-- Need an ImageView to use sprite sheet and dra w required images -->
+    <!--
+    <ImageView
+        android:layout_width=""
+        android:layout_height="" />
+        -->
+</android.support.constraint.ConstraintLayout>
